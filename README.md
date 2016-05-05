@@ -1,3 +1,2 @@
 # mocha-sails
-
-a [Sails](http://sailsjs.org) application
+Unit Testing Sails.js applications with Mocha.
