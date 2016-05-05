@@ -50,6 +50,17 @@ module.exports = function(grunt) {
 		}) || {};
 	}
 
+  // grunt.initConfig({
+  //   mochaTest: {
+  //     test: {
+  //       options: {
+  //         reporter: 'spec'
+  //       },
+  //       src: ['tests/**/*.spec.js']
+  //     }
+  //   }
+  // });
+
 	/**
 	 * Invokes the function from a Grunt configuration module with
 	 * a single argument - the `grunt` object.
@@ -77,5 +88,8 @@ module.exports = function(grunt) {
 	// Run task functions to configure Grunt.
 	invokeConfigFn(taskConfigurations);
 	invokeConfigFn(registerDefinitions);
+
+  // grunt.loadNpmTasks('grunt-mocha-test');
+  // grunt.registerTask('test', ['mochaTest']);
 
 };
