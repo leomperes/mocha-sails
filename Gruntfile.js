@@ -52,7 +52,7 @@ module.exports = function(grunt) {
 
   // grunt.initConfig({
   //   mochaTest: {
-  //     test: {
+  //     tests: {
   //       options: {
   //         reporter: 'spec'
   //       },
@@ -89,7 +89,7 @@ module.exports = function(grunt) {
 	invokeConfigFn(taskConfigurations);
 	invokeConfigFn(registerDefinitions);
 
-  // grunt.loadNpmTasks('grunt-mocha-test');
-  // grunt.registerTask('test', ['mochaTest']);
+  // grunt.loadNpmTasks('grunt-mocha-tests');
+  // grunt.registerTask('tests', ['mochaTest']);
 
 };

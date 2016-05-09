@@ -3,5 +3,8 @@
  */
 
 module.exports = function (grunt) {
-  grunt.registerTask('test', ['mochaTest']);
+  // grunt.registerTask('tests', ['mochaTest']);
+  grunt.registerTask('test', [
+    'mocha_istanbul:coverage'
+  ]);
 };
