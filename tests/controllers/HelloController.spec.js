@@ -21,7 +21,7 @@ describe('The Hello Controller', function() {
       // Asserts send() method was called and that it was called
       // with the correct arguments: 'Hello World'
       assert(send.called);
-      assert(send.calledWith('Hello World'));
+      assert(send.calledWith({message: 'Hello World'}));
     });
   });
 });
