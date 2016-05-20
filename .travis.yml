@@ -11,7 +11,7 @@ addons:
       - g++-4.8
 env:
   - TRAVIS=travis CXX=g++-4.8
-before_install:
-  - npm install -g dredd
-before_script:
-  - dredd
+#before_install:
+#  - npm install -g dredd
+#before_script:
+#  - dredd

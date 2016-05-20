@@ -7,4 +7,7 @@ module.exports = function (grunt) {
   grunt.registerTask('test', [
     'mocha_istanbul:coverage'
   ]);
+  // grunt.registerTask('dredd', [
+  //   'dredd'
+  // ]);
 };

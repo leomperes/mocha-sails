@@ -50,7 +50,7 @@ module.exports = function(grunt) {
 		}) || {};
 	}
 
-  // grunt.initConfig({
+  grunt.initConfig({
   //   mochaTest: {
   //     tests: {
   //       options: {
@@ -59,7 +59,12 @@ module.exports = function(grunt) {
   //       src: ['tests/**/*.spec.js']
   //     }
   //   }
-  // });
+    dredd: {
+      options: {
+        src: './docs/api/api-description.apib'
+      }
+    }
+  });
 
 	/**
 	 * Invokes the function from a Grunt configuration module with
@@ -91,5 +96,7 @@ module.exports = function(grunt) {
 
   // grunt.loadNpmTasks('grunt-mocha-tests');
   // grunt.registerTask('tests', ['mochaTest']);
+
+  grunt.loadNpmTasks('grunt-dredd');
 
 };
