@@ -1,0 +1,33 @@
+FORMAT: 1A
+HOST: http://localhost:1337
+
+# Sails.js with Mocha project test
+Unit Testing [Sails.js](http://sailsjs.org/) applications with [Mocha](http://mochajs.org/) documentation used by Inspire Concepta platform. It features functionality to test controllers and models structures.
+
+# Group Controller
+
+## Hello World [/hello]
+
+### Print on screen [GET]
+Print the "Hello World" text, showing as a plain text.
+
++ Response 200
+
+    + Headers
+
+            x-powered-by: Sails <sailsjs.org>
+            access-control-allow-origin:
+            access-control-allow-credentials:
+            access-control-allow-methods:
+            access-control-allow-headers:
+            access-control-expose-headers:
+            content-type: application/json; charset=utf-8
+            content-length: 11
+            etag: W/"b-sQqNsWTgdUEFt6mb5y4/5Q"
+            connection: close
+
+    + Body
+
+            {
+              "message": "Hello World"
+            }

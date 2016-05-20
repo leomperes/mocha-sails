@@ -21,9 +21,15 @@ module.exports = function (grunt) {
         mask: '**/*.spec.js',
         root: 'api/'
       }
+    },
+    dredd: {
+      options: {
+        src: './docs/api-description.apib'
+      }
     }
   });
 
   // grunt.loadNpmTasks('grunt-mocha-tests');
   grunt.loadNpmTasks('grunt-mocha-istanbul');
+  grunt.loadNpmTasks('grunt-dredd');
 };
